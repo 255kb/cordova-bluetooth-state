@@ -10,9 +10,7 @@ Template.registerHelper('isBluetoothAvailable', function() {
 });
 
 Meteor.startup(function () {
-    if(Meteor.isCordova) {
-        chrome.bluetooth.getAdapterState(adapterStateCallback);
+    chrome.bluetooth.getAdapterState(adapterStateCallback);
 
-        chrome.bluetooth.onAdapterStateChanged.addListener(adapterStateCallback);
-    }
+    chrome.bluetooth.onAdapterStateChanged.addListener(adapterStateCallback);
 });
