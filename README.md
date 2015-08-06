@@ -30,10 +30,13 @@ Or
     
 ## Dependencies
 
-- [cordova-plugin-bluetooth-status@1.0.0](https://www.npmjs.com/package/cordova-plugin-bluetooth-status)
+- [cordova-plugin-bluetooth-status@1.0.3](https://www.npmjs.com/package/cordova-plugin-bluetooth-status)
 
   
 ## Changelog
+
+### v2.0.1:
+- updating dependency
 
 ### v2.0.0:
 - changing Cordova plugin dependency from org.chromium.bluetooth to cordova-plugin-bluetooth-status
