@@ -2,7 +2,9 @@
 
 ## What is it?
 
-Cordova-bluetooth-state is a lightweight package allowing to check the bluetooth status (available or not) reactively in a Meteor application.
+Cordova-bluetooth-state is a lightweight package allowing to check the Bluetooth status reactively in a Meteor application.
+
+It is using the following Cordova plugin: [cordova-plugin-bluetooth-status](https://www.npmjs.com/package/cordova-plugin-bluetooth-status).
 
 ## Installation
 
@@ -14,20 +16,26 @@ meteor add 255kb:cordova-bluetooth-state
 
 ## Usage
 
-You can either check the bluetooth status by using the Session variable `isBluetoothAvailable` or the global template `isBluetoothAvailable`: 
+The package exports the `BluetoothStatus` object in the global scope.
 
-    Session.get('isBluetoothAvailable');
+You can either check the Bluetooth status by using the object member `isEnabled` (a ReactiveVar) or the global template `BluetoothStatus.isEnabled`: 
+
+    BluetoothStatus.isEnabled.get()
 
 Or 
     
-    {{#if isBluetoothAvailable}}
+    {{#if BluetoothStatus.isEnabled}}
     
     {{/if}}
     
-    {{#unless isBluetoothAvailable}}
-    
-    {{/unless}}
-    
 ## Dependencies
-- org.chromium.bluetooth@1.1.2
 
+- [cordova-plugin-bluetooth-status@1.0.0](https://www.npmjs.com/package/cordova-plugin-bluetooth-status)
+
+  
+## Changelog
+
+### v2.0.0:
+- changing Cordova plugin dependency from org.chromium.bluetooth to cordova-plugin-bluetooth-status
+- rewrite of the package to use new plugin
+- use of ReactiveVar instead of Session
