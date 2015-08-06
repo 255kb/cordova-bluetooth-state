@@ -1,4 +1,4 @@
-255kb:cordova-bluetooth-state@1.0.1
+255kb:cordova-bluetooth-state@2.0.0
 base64@1.0.3
 blaze@2.1.2
 blaze-tools@1.0.3
@@ -16,9 +16,7 @@ minimongo@1.0.8
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 random@1.0.3
-reactive-dict@1.1.0
 reactive-var@1.0.5
-session@1.1.0
 spacebars-compiler@1.0.6
 templating@1.1.1
 tracker@1.0.7
