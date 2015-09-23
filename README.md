@@ -35,6 +35,9 @@ Or
   
 ## Changelog
 
+### v2.1.0:
+- switch to new Cordova plugins repository for dependency
+
 ### v2.0.1:
 - updating dependency
 
